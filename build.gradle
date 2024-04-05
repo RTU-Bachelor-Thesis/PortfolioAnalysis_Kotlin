@@ -1,0 +1,26 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.23'
+    id 'me.champeau.jmh' version '0.7.2'
+}
+
+group = 'org.baseGroup'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JMH dependencies
+    implementation 'org.openjdk.jmh:jmh-core:1.37', 'org.openjdk.jmh:jmh-generator-annprocess:1.37'
+
+    // JUnit dependencies
+    implementation 'org.jetbrains.kotlin:kotlin-test:1.9.23'
+}
+
+test {
+    useJUnitPlatform()
+}
+kotlin {
+    jvmToolchain(21)
+}
