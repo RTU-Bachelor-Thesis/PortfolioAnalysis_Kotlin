@@ -1,0 +1,25 @@
+Benchmark                                                (assetsCount)  Mode  Cnt       Score       Error  Units
+PortfolioBenchmark.benchmarkApplyWeights                            10  avgt    5    2277,546 ±  5158,815  ns/op
+PortfolioBenchmark.benchmarkApplyWeights                           100  avgt    5   18103,595 ±  3073,727  ns/op
+PortfolioBenchmark.benchmarkApplyWeights                          1000  avgt    5  189761,705 ± 81502,516  ns/op
+PortfolioBenchmark.benchmarkCalculateReturnChange                   10  avgt    5    1277,149 ±   216,015  ns/op
+PortfolioBenchmark.benchmarkCalculateReturnChange                  100  avgt    5    9983,410 ±  2579,793  ns/op
+PortfolioBenchmark.benchmarkCalculateReturnChange                 1000  avgt    5  111191,597 ± 23342,670  ns/op
+PortfolioBenchmark.benchmarkCombine                                 10  avgt    5    1455,898 ±    22,547  ns/op
+PortfolioBenchmark.benchmarkCombine                                100  avgt    5   15449,467 ±  2725,163  ns/op
+PortfolioBenchmark.benchmarkCombine                               1000  avgt    5  177465,477 ± 40082,116  ns/op
+PortfolioBenchmark.benchmarkFillRandom                              10  avgt    5     892,091 ±    38,611  ns/op
+PortfolioBenchmark.benchmarkFillRandom                             100  avgt    5    9712,476 ±  1087,403  ns/op
+PortfolioBenchmark.benchmarkFillRandom                            1000  avgt    5   93036,809 ±  2295,722  ns/op
+PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange             10  avgt    5      49,205 ±    18,967  ns/op
+PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange            100  avgt    5     469,500 ±   108,655  ns/op
+PortfolioBenchmark.benchmarkFindAssetsWithinReturnRange           1000  avgt    5    8134,036 ±   433,617  ns/op
+PortfolioBenchmark.benchmarkFindMaxTotalReturn                      10  avgt    5     121,850 ±     5,903  ns/op
+PortfolioBenchmark.benchmarkFindMaxTotalReturn                     100  avgt    5    1315,799 ±    66,540  ns/op
+PortfolioBenchmark.benchmarkFindMaxTotalReturn                    1000  avgt    5   14031,202 ±  2685,186  ns/op
+PortfolioBenchmark.benchmarkScale                                   10  avgt    5     626,838 ±    22,216  ns/op
+PortfolioBenchmark.benchmarkScale                                  100  avgt    5    8141,665 ±   363,234  ns/op
+PortfolioBenchmark.benchmarkScale                                 1000  avgt    5   85275,834 ± 11877,360  ns/op
+PortfolioBenchmark.benchmarkTranspose                               10  avgt    5     953,619 ±    36,957  ns/op
+PortfolioBenchmark.benchmarkTranspose                              100  avgt    5    8725,934 ±   229,269  ns/op
+PortfolioBenchmark.benchmarkTranspose                             1000  avgt    5  119006,489 ±  8393,654  ns/op
