@@ -3,6 +3,7 @@ package org.code
 data class Portfolio(val data: List<List<Double>>) {
     fun transpose(): Portfolio =
         Portfolio(data[0].indices.map { col -> data.map { it[col] } })
+
     fun scale(coefficient: Double): Portfolio =
         Portfolio(data.map { row -> row.map { it * coefficient } })
 
@@ -19,12 +20,6 @@ data class Portfolio(val data: List<List<Double>>) {
 
     fun findMaxTotalReturn(): Double =
         data.maxOf { it.sum() }
-
-    fun print() {
-        data.forEach { row ->
-            println(row.joinToString(separator = " ") { element -> "%8.2f".format(element) })
-        }
-    }
 
     companion object {
         fun fillRandom(rows: Int, columns: Int, min: Double, max: Double): Portfolio {
@@ -49,5 +44,11 @@ data class Portfolio(val data: List<List<Double>>) {
             }
             return Portfolio(normalizedWeights).transpose()
         }
+    }
+}
+
+fun Portfolio.print() {
+    data.forEach { row ->
+        println(row.joinToString(separator = " ") { element -> "%8.2f".format(element) })
     }
 }
