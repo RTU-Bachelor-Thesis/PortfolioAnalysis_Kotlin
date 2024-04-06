@@ -13,7 +13,7 @@ fun main() {
     transposedPortfolio.print()
 
     val scaledPortfolio = originalPortfolio.scale(Math.PI)
-    println("\nScaled portfolio:")
+    println("\nScaled portfolio: ")
     scaledPortfolio.print()
 
     val returnChangePortfolio = originalPortfolio.calculateReturnChange()
